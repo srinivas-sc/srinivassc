@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Services Navigation Menu</title>
+    <style>
+        /* Basic styles for the navigation bar */
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+            font-family: Arial, sans-serif;
+        }
+
+        /* The dropdown container */
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        /* Dropdown button */
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit; /* Important for vertical align on mobile */
+            margin: 0; /* Important for vertical align on mobile */
+            cursor: pointer;
+        }
+
+        /* Add a red background color to navbar links on hover */
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: #555;
+        }
+
+        /* Dropdown content (hidden by default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        /* Add a grey background color to dropdown links on hover */
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+      <div class="dropdown">
+        <button class="dropbtn">Services ▾</button>
+        <div class="dropdown-content">
+          <a href="#">Install</a>
+          <a href="#">Config</a>
+          <a href="#">Maintain</a>
+          <a href="#">Troubleshoot/Diagnostics</a>
+          <a href="#">Training</a>
+        </div>
+      </div>
+      <!-- You can add other links here -->
+      <a href="#" style="float:left; color: white; text-align: center; padding: 14px 16px; text-decoration: none;">About</a>
+    </div>
+
+    <div style="padding:20px; font-family: Arial, sans-serif;">
+        <h3>Navigation Dropdown Menu</h3>
+        <p>Hover over the "Services" button in the navigation bar to see the dropdown menu.</p>
+    </div>
+
+</body>
+</html>
